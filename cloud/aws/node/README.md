@@ -8,24 +8,6 @@ Install npm on your machine. We use ```node-lambda``` to deploy the Lambda funct
 npm install -g node-lambda
 ```
 
-## List of Functions in Folder to Deploy
-### http-basic-authorizer
-HTTP BASIC Authorization using DynamoDB table for user accounts
-### get-session
-### get-session-list
-### get-session-result-page
-### post-session-append
-### post-session-create
-### post-session-start
-### post-session-start
-### get-simulation-list
-### get-simulation-input-file
-### put-simulation-name
-### put-simulation-input
-### delete-simulation
-### foqus-sns-update
-### foqus-fake-job-runner
-
 ## Deployment
 Each directory represent a Lambda function. cd into the Lambda function you want to run/deploy and do the following:
 
@@ -64,3 +46,21 @@ npm run deploy
 CORS For Integrated Lambda Proxy Must be done in Lambda functions
 because "Integration Response" is disabled, CORS settings will not work!
 ```
+
+## List of Functions in Folder to Deploy
+### http-basic-authorizer
+HTTP BASIC Authorization using DynamoDB table for user accounts
+### get-session
+### get-session-list
+### get-session-result-page
+### post-session-append
+### post-session-create
+### post-session-start
+### post-session-start
+### get-simulation-list
+### get-simulation-input-file
+### put-simulation-name
+### put-simulation-input
+### delete-simulation
+### foqus-sns-update
+### foqus-fake-job-runner
