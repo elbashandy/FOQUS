@@ -21,12 +21,12 @@ Each directory represent a Lambda function. cd into the Lambda function you want
 # Note: If you want Lambda to write to CloudWatch's logs, then
 # make sure to add the right permission to the create role.
 
-AWS_ROLE=[AWS_ARN_FOR_LAMBDA_ROLE]
+export AWS_ROLE=[AWS_ARN_FOR_LAMBDA_ROLE]
 ```
 ```
 # AWS_REGION: To deploy the Lambda functions at the specified region.
 
-AWS_REGION=[AWS_REGION]
+export AWS_REGION=[AWS_REGION]
 ```
 
 #### To test before deployment
