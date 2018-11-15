@@ -6,6 +6,7 @@
  * @license See LICENSE.md
  * @see https://github.com/motdotla/node-lambda-template
  */
+ //arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs
 'use strict';
 'use AWS.S3'
 console.log('Loading function');
@@ -16,7 +17,7 @@ const dirPath = "./tmp";
 const path = require('path');
 const abspath = path.resolve(dirPath);
 const default_user_name = "anonymous";
-const s3_bucket_name = "foqus-simulations";
+const s3_bucket_name = "foqus-cloud-simulations";
 
 // For development/testing purposes
 exports.handler = function(event, context, callback) {

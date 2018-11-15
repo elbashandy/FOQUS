@@ -76,3 +76,4 @@ installer.wixobj
 version.wxi
 zzFOQUS_User_Manual.ps
 pytest.log
+node_modules
