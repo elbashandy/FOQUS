@@ -6,6 +6,28 @@ AWS API Gateway specifies Web Service interface, and hooks into AWS Lambda Backe
 AWS S3 is used for file storage, which includes sessions and simulations.
 AWS DynamoDB is used for job and consumer status tracking, and user management.
 
+### Preparing The AWS Environment
+##### Create conda env with Python 2.7
+
+```
+conda create -n [FOQUS_AWS_ENV_NAME] python=2.7
+
+source activate [FOQUS_AWS_ENV_NAME]
+```
+
+##### Install awscli to be able to prompt commands to AWS
+```
+pip install awscli --upgrade
+```
+
+##### Configure your aws client to correctly send requests to your AWS account
+```
+# Fill out the right info
+
+aws configure
+```
+
+
 #### Session Resource
 ##### GET session
 -- returns JSON array of all sessions
